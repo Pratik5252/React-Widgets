@@ -64,12 +64,16 @@ const GalleryWidget = () => {
             >
               <IoMdArrowRoundBack
                 className={`w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 text-[#6F787C] ${
-                  images.length > 3 && currentIndex !== 0 ? "group-active:text-white" : ""
+                  images.length > 3 && currentIndex !== 0
+                    ? "group-active:text-white"
+                    : ""
                 }`}
               />
             </button>
             <button
-              disabled={images.length <= 3 || currentIndex === images.length - 1}
+              disabled={
+                images.length <= 3 || currentIndex === images.length - 1
+              }
               onClick={() => rotateImages("forward")}
               className={`group bg-arrow-gradient flex justify-center items-center w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 bg-opacity-50 text-white rounded-full ${
                 images.length <= 3 || currentIndex === images.length - 1
@@ -79,7 +83,9 @@ const GalleryWidget = () => {
             >
               <IoMdArrowRoundForward
                 className={`w-3 h-3 md:w-4 md:h-4 lg:w-5 lg:h-5 text-[#6F787C] ${
-                  images.length > 3 && currentIndex !== images.length - 1 ? "group-active:text-white" : ""
+                  images.length > 3 && currentIndex !== images.length - 1
+                    ? "group-active:text-white"
+                    : ""
                 }`}
               />
             </button>
@@ -113,7 +119,7 @@ const GalleryWidget = () => {
           <></>
         )}
         {images.length === 0 && (
-          <div className="w-full h-[30vh] flex justify-center items-center text-white text-opacity-50">
+          <div className="w-full h-[30vh] lg:h-[20vh] flex justify-center items-center text-white text-opacity-50">
             No images uploaded yet
           </div>
         )}

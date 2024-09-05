@@ -7,8 +7,8 @@ const Widgets = () => {
   return (
     <div className="flex flex-col h-full gap-4">
       <>
-        <div className="bg-[#363C43] w-full h-auto px-3 sm:px-4 md:px-5 lg:px-6 flex justify-center gap-2 sm:gap-3 md:gap-2 rounded-2xl shadow-[5.67px_5.67px_3.78px_0px_rgba(0,0,0,0.4)]">
-          <div className="flex flex-col justify-between md:h-1/2 mt-5">
+        <div className="bg-[#363C43] w-full h-auto px-3 sm:px-4 md:px-4 flex justify-center gap-2 sm:gap-3 md:gap-2 rounded-2xl shadow-[5.67px_5.67px_3.78px_0px_rgba(0,0,0,0.4)]">
+          <div className="flex flex-col justify-between h-1/2 mt-5">
             <img
               src={vector}
               alt=""
@@ -27,7 +27,7 @@ const Widgets = () => {
       </>
       <>
         <div className="flex bg-[#363C43] w-full px-3 sm:px-4 md:px-4 h-auto justify-center rounded-2xl shadow-[5.67px_5.67px_3.78px_0px_rgba(0,0,0,0.4)] gap-2 sm:gap-3 md:gap-2 overflow-x-hidden">
-          <div className="flex flex-col justify-between md:h-1/2 mt-5 overflow-x-hidden">
+          <div className="flex flex-col justify-between h-1/2 mt-5 overflow-x-hidden">
             <img
               src={vector}
               alt=""
